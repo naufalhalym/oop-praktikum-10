@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,7 +21,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/Mahasiswa','MahasiswaController@index');
-Route::get('/Mahasiswa/create','MahasiswaController@create');
-Route::post('/Mahasiswa','MahasiswaController@store');
-
+Route::get('/Mahasiswa', [App\Http\Controllers\MahasiswaController::class, 'index']);
+Route::get('/Mahasiswa/create', [App\Http\Controllers\MahasiswaController::class, 'create']);
+Route::get('/Mahasiswa', [App\Http\Controllers\MahasiswaController::class, 'store']);

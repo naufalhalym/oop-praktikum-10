@@ -7,10 +7,10 @@
   <a href="{{url('/Mahasiswa/create')}}">Tambah data</a>
   <table>
     <tr>
-      <td>nim</td>
-      <td>nama</td>
-      <td>jurusan</td>
-      <td>alamat</td>
+      <td>Nim</td>
+      <td>Nama</td>
+      <td>Jurusan</td>
+      <td>Alamat</td>
     </tr>
     @foreach($rows as $row)
     <tr>
